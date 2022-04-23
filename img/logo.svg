@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 147.41921 98.27947">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 20px;
+        fill: #fff;
+        font-family: JetBrainsMono-SemiBold, JetBrains Mono;
+        font-weight: 600;
+      }
+
+      .cls-2 {
+        letter-spacing: -0.00303em;
+      }
+    </style>
+  </defs>
+  <g id="Calque_2" data-name="Calque 2">
+    <g id="Calque_1-2" data-name="Calque 1">
+      <g>
+        <rect width="32.75982" height="32.75982" rx="16.3799"/>
+        <rect y="32.75982" width="32.75982" height="32.75982"/>
+        <rect x="32.75982" y="32.75982" width="32.75982" height="32.75982"/>
+        <rect x="65.51965" y="32.75982" width="32.75982" height="32.75982" rx="16.3799"/>
+        <rect y="65.51965" width="32.75982" height="32.75982" rx="16.3799"/>
+        <rect x="82.11552" y="65.51965" width="32.75982" height="32.75982" rx="16.3799"/>
+        <rect x="32.75982" y="65.51965" width="32.75982" height="32.75982"/>
+        <rect x="49.24772" y="65.51965" width="32.75982" height="32.75982"/>
+        <rect x="32.75982" width="32.75982" height="32.75982"/>
+        <rect x="65.51965" width="32.75982" height="32.75982"/>
+        <rect x="98.27947" width="32.75982" height="32.75982"/>
+        <rect x="114.65938" width="32.75982" height="32.75982"/>
+        <text class="cls-1" transform="translate(7.39857 22.64075)">Calculateur</text>
+        <text class="cls-2" transform="translate(7.42591 55.40149)">Carbone </text>
+        <text class="cls-1" transform="translate(7.64759 88.16126)">Campus</text>
+      </g>
+    </g>
+  </g>
+</svg>

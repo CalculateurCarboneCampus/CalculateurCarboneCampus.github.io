@@ -1,0 +1,149 @@
+:root {
+    --line-height:      20px;
+    --font-size:        18px;
+    --color--main:      hsl(204, 38%, 72%);
+    --color--dark:      rgb(5, 5, 5);
+    --color--light:     white;
+
+    --section-rounded-padding: 10rem;
+    --section-max-width: 75rem;
+
+    --footer-height: calc(3 * var(--line-height));
+}
+
+
+@font-face {
+    font-family: "JetBrainsMono-2.242";
+    src: url("/fonts/JetBrainsMono-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-style: italic;
+    font-family: "JetBrainsMono-2.242";
+    src: url("/fonts/JetBrainsMono-MediumItalic.woff2") format("woff2");
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "JetBrainsMono-2.242", sans-serif;
+    background: var(--color--main);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+}
+
+html {
+    overflow: auto;
+}
+
+
+body {
+    overflow: hidden;
+    padding-bottom: var(--footer-height);
+}
+
+#logo-header {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    padding: var(--line-height);
+    margin: auto;
+}
+
+section {
+    width: 100%;
+    position: relative;
+    padding-top: CALC( var(--line-height) * 4);
+    padding-bottom: CALC( var(--line-height) * 4);
+    max-width: var(--section-max-width);
+    margin: auto;
+    padding-left: var(--section-rounded-padding);
+    padding-right: var(--section-rounded-padding);
+    box-sizing: border-box;
+}
+
+section:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50vw;
+    height: 100%;
+    background: inherit;
+    top: 0;
+}
+
+section:nth-child(2n) {
+    background: var(--color--dark);
+    color: var(--color--light);
+    text-align: left;
+    border-radius: var(--section-rounded-padding) 0 0 var(--section-rounded-padding);
+}
+section:nth-child(2n):after {
+    left: 100%;
+}
+
+section:nth-child(2n+1) {
+    background: var(--color--light);
+    color: var(--color--dark);
+    text-align: right;
+    border-radius: 0 var(--section-rounded-padding) var(--section-rounded-padding) 0;
+}
+section:nth-child(2n+1):after {
+    right: 100%;
+}
+
+section:nth-child(1) {
+    background: var(--color--main);
+    z-index: 1000;
+}
+
+header>*:first-child,
+footer>*:first-child,
+section>*:first-child {
+    margin-top: 0 !important;
+}
+
+header>*:last-child,
+footer>*:last-child,
+section>*:last-child {
+    margin-bottom: 0 !important;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    background: var(--color--light);
+    color: var(--color--main);
+    box-sizing: border-box;
+    display: inline-block;
+    border: solid 2px;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    padding: var(--line-height);
+}
+
+section > button {
+    display: block;
+    margin: auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--color--main);
+    color: var(--color--light);
+    padding: var(--line-height);
+    z-index: 100;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--color--main);
+    color: var(--color--light);
+    padding: var(--line-height);
+}
