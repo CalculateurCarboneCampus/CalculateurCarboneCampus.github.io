@@ -149,3 +149,8 @@ footer {
     color: var(--color--light);
     padding: var(--line-height);
 }
+
+.align-center {
+    display: flex;
+    justify-content: center;
+}
