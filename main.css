@@ -109,7 +109,8 @@ section>*:last-child {
     margin-bottom: 0 !important;
 }
 
-button {
+button,
+.button {
     all: unset;
     cursor: pointer;
     background: var(--color--light);
@@ -122,7 +123,8 @@ button {
     padding: var(--line-height);
 }
 
-section > button {
+section > button, 
+section > .button {
     display: block;
     margin: auto;
 }
